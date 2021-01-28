@@ -1,0 +1,9 @@
+@import './variables';
+
+.Contact{
+  height: calc(50vh - 80px);
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

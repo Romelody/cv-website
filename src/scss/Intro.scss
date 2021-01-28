@@ -1,0 +1,11 @@
+@import './variables';
+
+.Intro{
+  height: calc(100vh - 80px);
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: $primary;
+  background: #010c28;
+}
