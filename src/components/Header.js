@@ -10,11 +10,11 @@ function Header(){
 				<Container className="header">
 					<a href="#" className="logo">Melody Calderon</a>
 					<ul>
-						<li><a href="#">Intro</a></li>
-						<li><a href="#">MyWork</a></li>
-						<li><a href="#">About</a></li>
-						<li><a href="#">Skills</a></li>
-						<li><a href="#">Contact</a></li>
+						<li><a href="#intro">Intro</a></li>
+						<li><a href="#mywork">MyWork</a></li>
+						<li><a href="#about">About</a></li>
+						<li><a href="#skills">Skills</a></li>
+						<li><a href="#contact">Contact</a></li>
 					</ul>
 				</Container>
 			</header>

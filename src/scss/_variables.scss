@@ -1,9 +1,10 @@
+$realDarkBlue:#010c28;
 $darkBlue: #79b2d2;
 $lightBlue: #8bd4e1;
 $gold: #DEAB5F;
 $pink:#f59fd0;
-$darkViolet:#b697d5;
-$lightViolet:#8f74c8;
+$darkViolet:#8f74c8;
+$lightViolet:#b697d5;
 
 
 
@@ -17,4 +18,8 @@ $secondary: $darkBlue;
 @font-face {
   font-family: 'Abel';
   @import url('https://fonts.googleapis.com/css2?family=Abel&display=swap');
+}
+@font-face{
+  font-family: 'Inconsolata';
+  @import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@200;300;400;500;600;700;800;900&display=swap');
 }

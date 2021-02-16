@@ -7,5 +7,36 @@
   justify-content: center;
   align-items: center;
   color: $primary;
-  background: #010c28;
+  background: $realDarkBlue;
+  text-align: left;
+  position: relative;
+  overflow: hidden;
+  .circle{
+    position: absolute;
+    left: -500px;
+    bottom: -100px;
+  }
+  .bg-01{
+    position: absolute;
+    z-index: 0;
+    opacity: 20%;
+  }
+  .hello{
+    color: $pink;
+    font-size: 75px;
+    font-weight: 800;
+  }
+  .me{
+    position: absolute;
+    top: 55px;
+    font-family: 'Inconsolata';
+    text-transform: uppercase;
+    font-size: 15px;
+    color: $lightBlue;
+    letter-spacing: 25px;
+    font-weight: 300;
+    padding-left: 20px;
+    background: $realDarkBlue;
+    opacity: 80%;
+  }
 }

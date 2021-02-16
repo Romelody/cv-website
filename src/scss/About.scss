@@ -6,4 +6,123 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  background: $darkViolet;
+  color: $realDarkBlue;
+  position: relative;
+  overflow: hidden;
+  .img-01{
+    position: absolute;
+    top: -200px;
+    left: -300px;
+    mix-blend-mode: lighten;
+  }
+
+  // Animacion circulo
+  .ring{
+    position: absolute;
+    top: -10%;
+    left: -10%;
+    width: 300px;
+    height: 300px;
+    background: transparent;
+    border: 1px solid #ffffff;
+    border-radius: 50%;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+    transform: rotate(30deg);
+    opacity: 80%;
+    &::before{
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      border: 3px solid transparent;
+      border-top: 3px solid white;
+      border-bottom: 3px solid white;
+      border-radius: 50%;
+    }
+    span{
+      display: block;
+      position: absolute;
+      top: calc(50% - 2px);
+      left: 50%;
+      width: 50%;
+      height: 4px;
+      background: transparent;
+      transform-origin: left;
+      animation: animate 2s linear infinite alternate;
+      &::before{
+        content: '';
+        position: absolute;
+        width: 10px;
+        height: 10px;
+        border-radius: 50%;
+        background: white;
+        top: -6px;
+        right: -5px;
+        box-shadow: 0 0 20px white;
+      }
+      @keyframes animate {
+        0%{
+          transform: rotate(20deg);
+        }
+        100%{
+          transform: rotate(30deg);
+        }
+      }
+    }
+  }
+
+  // Animacion Linea
+  .line{
+    position: absolute;
+    right: 10px;
+    top: 0;
+    width: 25px;
+    height: 100%;
+    opacity: 70%;
+    .one{
+      height: 45%;
+      border-right: 1px solid white;
+    }
+    .two{
+      height: 11%;
+      border-left: 1px solid white;
+      transform: rotate(24deg);
+      margin-left: 11px;
+      margin-bottom: -5px;
+    }
+    .three{
+      height: 45%;
+      border-left: 1px solid white;
+      span{
+        display: block;
+        position: absolute;
+        height: 4px;
+        background: transparent;
+        transform-origin: left;
+        animation: ani 6s linear infinite alternate;
+        margin-top: 5px;
+        &::before{
+          content: '';
+          position: absolute;
+          width: 5px;
+          height: 20px;
+          background: white;
+          top: -6px;
+          right: -2px;
+          box-shadow: 0 0 20px white;
+        }
+        @keyframes ani {
+          0%{
+            bottom: 0;
+          }
+          100%{
+            bottom: 44%;
+          }
+        }
+      }
+    }
+  }
 }

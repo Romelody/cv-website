@@ -5,8 +5,21 @@ import '../scss/About.scss'
 function About() { 
 	return(
 		<>
-			<section className="About">
-				<Container>
+			<section className="About" id="about">
+				<div className="ring">
+					<span></span>
+				</div>
+				<div className="line">
+					<div className="one"></div>
+					<div className="two"></div>
+					<div className="three">
+						<span></span>
+					</div>
+				</div>
+				{/* <div className="position-relative h-100">
+					<img className="img-01" src="./assets/example.jpg"/>
+				</div> */}
+				<Container className="">
 					<Row>
 						<Col md={6}>
 						<div>

@@ -5,7 +5,7 @@ import '../scss/Skills.scss'
 function Skills() { 
 	return(
 		<>
-			<section className="Skills">
+			<section className="Skills" id="skills">
 				<Container>
 					<Row>
 						<Col md={3}>

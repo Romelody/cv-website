@@ -5,8 +5,15 @@ import '../scss/MyWork.scss'
 function MyWork() { 
 	return(
 		<>
-			<section className="MyWork">
+			<section className="MyWork" id="mywork">
+				<div className="marco">
+					<div className="one"></div>
+					<div className="two"></div>
+					<div className="three"></div>
+					<div className="four"></div>
+				</div>
 				<Container>
+					<h3>This Are some of my latest works</h3>
 					<Row>
 						<Col md={3}>
               <img src="./assets/proyec-example.png" alt=""/>

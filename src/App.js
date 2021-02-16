@@ -1,6 +1,7 @@
 import logo from './logo.svg';
 import Header from './components/Header.js'
 import Intro from './components/Intro.js'
+import Slider from './components/Slider.js'
 import About from './components/About'
 import MyWork from './components/MyWork'
 import Skills from './components/Skills'
@@ -13,6 +14,7 @@ function App() {
   return (
     <div className="App">
       <Header/>
+        <Slider/>
         <Intro/>
         <About/>
         <MyWork/>

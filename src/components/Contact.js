@@ -5,7 +5,7 @@ import '../scss/Contact.scss'
 function Intro() { 
 	return(
 		<>
-			<section className="Contact">
+			<section className="Contact" id="contact">
 				<Container>
           <form>
 					  <Row>
